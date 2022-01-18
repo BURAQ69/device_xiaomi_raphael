@@ -21,7 +21,7 @@ PRODUCT_NAME := palladium_raphael
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.palladiumdevice.maintainer=WadieHabib \
     ro.palladiumdevice.cpu=SDM855 \
-    ro.palladiumdevice.display=6.39" \
+    ro.palladiumdevice.display=6.39 \
     ro.palladiumdevice.displaytype=FULLHD+ \
     ro.palladiumdevice.battery=4000mAh \
     ro.palladiumdevice.camera=48MP+8MP+13MP+20MP
@@ -29,3 +29,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 BUILD_FINGERPRINT := "Xiaomi/raphaelin/raphaelin:9/PKQ1.181121.001/V10.3.3.0.PFKINXM:user/release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+#Gapps
+PALLADIUM_BUILD_VARIANT := GAPPS
+TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
