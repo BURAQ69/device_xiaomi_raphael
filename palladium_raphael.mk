@@ -7,15 +7,13 @@
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
 # Inherit some common Palladium-OS stuff.
-$(call inherit-product, vendor/palladium/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
-PALLADIUM_BUILD_TYPE := OFFICIAL
+$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := raphael
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := palladium_raphael
+PRODUCT_NAME := pixys_raphael
 
 #Props for About Phone
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -31,7 +29,7 @@ BUILD_FINGERPRINT := "Xiaomi/raphaelin/raphaelin:9/PKQ1.181121.001/V10.3.3.0.PFK
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 #Gapps
-PALLADIUM_BUILD_VARIANT := GAPPS
+PIXYS_BUILD_VARIANT := GAPPS
 TARGET_GAPPS_ARCH := arm64
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_STOCK_ARCORE := true
