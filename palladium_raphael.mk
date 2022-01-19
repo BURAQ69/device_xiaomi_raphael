@@ -6,7 +6,7 @@
 
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common Palladium-OS stuff.
+# Inherit some common Pixys stuff.
 $(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
